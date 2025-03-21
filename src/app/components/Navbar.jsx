@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,9 +20,9 @@ function Navbar() {
     <motion.div
       initial={{ width: "90%", backdropFilter: "blur(0px)", backgroundColor: "rgba(0,0,0,0)" }}
       animate={{
-        width: scrolled ? "70%" : "90%",
+        width: scrolled ? "60%" : "90%",
         backdropFilter: scrolled ? "blur(10px)" : "blur(0px)",
-        backgroundColor: scrolled ? "rgba(0,0,0,0.30)" : "rgba(0,0,0,0)",
+        backgroundColor: scrolled ? "rgba(0,0,0,0.40)" : "rgba(0,0,0,0)",
 
       }}
       transition={{ duration: 0.7, ease: "easeInOut" }}
@@ -33,9 +34,7 @@ function Navbar() {
         <span className="cursor-pointer" >About</span>
         <span className="cursor-pointer" >Services</span>
       </div>
-      <button className="px-5 uppercase text-lg py-2 rounded-full border-2 border-[#31f526] hover:bg-[#31f526] hover:text-black transition duration-300">
-        Join Us
-      </button>
+      <Link href={'/signup'} className="px-5 uppercase text-lg py-2 rounded-full border-2 border-[#31f526] hover:bg-[#31f526] hover:text-black transition duration-300">Join Now</Link>
     </motion.div>
   );
 }

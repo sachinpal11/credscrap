@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Banner from "./components/Banner";
 import LocomotiveScroll from 'locomotive-scroll';
+import About from "./components/About";
+import PlatfromBenefits from "./components/PlatfromBenefits";
 
 export default function Home() {
 
@@ -12,9 +14,11 @@ export default function Home() {
     <div className="h-[200vh] flex flex-col overflow-x-hidden w-full">
       <Navbar />
       <Video />
-      <div className="w-full h-full absolute top-0">
+      <div className="w-full flex flex-col items-center h-auto absolute top-0">
         <Banner />
         <HeroSection />
+        <About />
+        <PlatfromBenefits />
       </div>
     </div>
   );
