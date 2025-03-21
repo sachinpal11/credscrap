@@ -17,15 +17,25 @@ function Navbar() {
 
   return (
     <motion.div
-      initial={{ width: "90%", backdropFilter: "blur(0px)" }}
+      initial={{ width: "90%", backdropFilter: "blur(0px)", backgroundColor: "rgba(0,0,0,0)" }}
       animate={{
-        width: scrolled ? "80%" : "90%",
+        width: scrolled ? "70%" : "90%",
         backdropFilter: scrolled ? "blur(10px)" : "blur(0px)",
+        backgroundColor: scrolled ? "rgba(0,0,0,0.30)" : "rgba(0,0,0,0)",
+
       }}
-      transition={{ duration: 0.7 }}
-      className="fixed top-10 z-10 left-1/2 transform -translate-x-1/2 flex items-center justify-center border border-white rounded-full px-4 py-4 text-2xl "
+      transition={{ duration: 0.7, ease: "easeInOut" }}
+      className="fixed top-5 z-10 left-1/2 transform -translate-x-1/2 flex items-center justify-between border border-white rounded-full px-2 py-2 text-2xl  backdrop-blur-lg"
     >
-      hello
+      <div className="ml-6 font-bold text-[#0aff06]">CredScrap</div>
+      <div className="uppercase w-[40%] justify-evenly flex gap-6 text-lg">
+        <span className="cursor-pointer" >Platform</span>
+        <span className="cursor-pointer" >About</span>
+        <span className="cursor-pointer" >Services</span>
+      </div>
+      <button className="px-5 uppercase text-lg py-2 rounded-full border-2 border-[#31f526] hover:bg-[#31f526] hover:text-black transition duration-300">
+        Join Us
+      </button>
     </motion.div>
   );
 }
