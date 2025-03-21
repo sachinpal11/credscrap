@@ -3,8 +3,8 @@ import Image from "next/image";
 import img1 from '@/assets/img2.png'
 export default function HeroSection() {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center">
-      <div className="max-w-8xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center m-8 bg-white p-10 rounded-2xl shadow-lg">
+    <div className="h-auto w-full flex items-center justify-center">
+      <div className="max-w-8xl bg w-full grid grid-cols-1 md:grid-cols-2 items-center m-9 bg-white p-10 rounded-2xl shadow-lg">
         {/* Left Side Text */}
         <div>
           <p className="text-green-500 font-medium uppercase mb-2  px-2 py-1 rounded">
