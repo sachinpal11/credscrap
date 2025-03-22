@@ -4,10 +4,11 @@ import { useState } from "react";
 import axios from "axios";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
   const [form, setForm] = useState({ email: "", password: "" });
-
+  const router = useRouter();
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -17,6 +18,7 @@ export default function Page() {
     try {
       const res = await axios.post("/api/user/login", form);
       console.log(res.data);
+      router.push('/profile');
     } catch (error) {
       console.log(error.response?.data || "Error occurred");
     }

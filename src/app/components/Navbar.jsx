@@ -30,7 +30,7 @@ function Navbar() {
     >
       <div className="ml-6 font-bold bg-gradient-to-r from-green-500 via-green-300 to-green-500 bg-clip-text text-transparent">CredScrap</div>
       <div className="uppercase w-[40%] justify-evenly flex gap-6 text-lg">
-        <span className="cursor-pointer" >Platform</span>
+        <span className="cursor-pointer" ><a href="platform">Platform</a></span>
         <span className="cursor-pointer" >About</span>
         <span className="cursor-pointer" >Services</span>
       </div>
