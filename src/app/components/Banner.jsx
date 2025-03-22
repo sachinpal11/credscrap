@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { motion } from 'motion/react'
+import Image from 'next/image';
 function Banner() {
   const [topDiv, setTopDiv] = useState(1);
 
@@ -22,17 +23,18 @@ function Banner() {
           drag
           dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
           onDragEnd={swapDivs}
-          className={`absolute w-85 h-[70%] flex items-center justify-center text-white text-xl border-2 border-green-500 backdrop-blur-xl font-bold rounded-4xl cursor-grab transition-all duration-300 ${topDiv === 1 ? "z-10" : "z-0 translate-x-20 scale-95"}`}
+          className={`absolute overflow-hidden w-85 h-[70%] flex items-center justify-center text-white text-xl border-2 border-green-500 backdrop-blur-xl font-bold rounded-4xl cursor-grab transition-all duration-300 ${topDiv === 1 ? "z-10" : "z-0 translate-x-20 scale-95"}`}
         >
-          Div 1
+          <img className='w-full h-full object-cover pointer-events-none' src={'https://theunitedindian.com/images/electronic-waste-disposal3.jpg'} alt='hello' />
         </motion.div>
         <motion.div
           drag
           dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
           onDragEnd={swapDivs}
-          className={`absolute w-85 h-[70%] flex border-2 border-green-500 backdrop-blur-xl items-center justify-center text-white text-xl font-bold rounded-4xl cursor-grab transition-all duration-300 ${topDiv === 2 ? "z-10" : "z-0 translate-x-20 scale-95"}`}
+          className={`absolute w-85 h-[70%] flex border-2 border-green-500 overflow-hidden backdrop-blur-xl items-center justify-center text-white text-xl font-bold rounded-4xl cursor-grab transition-all duration-300 ${topDiv === 2 ? "z-10" : "z-0 translate-x-20 scale-95"}`}
         >
-          Div 2
+          <img className='w-full h-full object-cover pointer-events-none' src={'https://www.dell.com/uploads/2023/10/ewaste.jpg'} alt='hello' />
+
         </motion.div>
       </div>
     </div>

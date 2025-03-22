@@ -17,7 +17,7 @@ const brands = [
 
 export default function Marquee() {
   return (
-    <div className="w-full my-30 h-[14vw] flex overflow-hidden relative">
+    <div className="w-full my-30 h-auto bg-black/10 backdrop-blur-3xl py-10 filter grayscale-[20%] flex overflow-hidden relative">
       <div className="flex w-auto gap-15 whitespace-nowrap animate-marquee">
         {[...brands, ...brands].map((brand, index) => (
           <div key={index} className="flex items-center w-[200px] h-[200px] aspect-square overflow-hidden">
@@ -25,7 +25,7 @@ export default function Marquee() {
               src={brand.src}
               alt={brand.alt}
               height={200}
-              className="w-[200px] h-[200px] rounded-full object-cover"
+              className="w-[200px] h-[200px] filter grayscale-[20%] rounded-full object-cover"
             />
           </div>
         ))}

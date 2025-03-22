@@ -7,6 +7,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import About from "./components/About";
 import PlatfromBenefits from "./components/PlatfromBenefits";
 import Marquee from "./components/Marquee";
+import Footer from "./components/Footer";
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
         <About />
         <Marquee />
         <PlatfromBenefits />
+        <Footer />
       </div>
     </div>
   );

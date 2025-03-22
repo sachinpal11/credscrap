@@ -32,7 +32,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div ref={divRef} className="h-auto w-full flex items-center justify-center">
+    <div ref={divRef} id="platform" className="h-auto w-full flex items-center justify-center">
       <div className="bg w-full flex justify-evenly items-center m-9 bg-white p-10 rounded-2xl shadow-lg">
         {/* Left Side Text */}
         <div className="w-1/2">
@@ -44,11 +44,11 @@ export default function HeroSection() {
           </h1>
           <div className="flex space-x-4 mt-6">
             <button className="px-6 py-3 border border-green-500 text-green-500 rounded-full flex items-center space-x-2 hover:bg-green-500 hover:text-white">
-              <span>Global Payouts</span>
+              <span>HouseHold</span>
               <span className="text-xl">+</span>
             </button>
             <button className="px-6 py-3 border border-green-500 text-green-500 rounded-full flex items-center space-x-2 hover:bg-green-500 hover:text-white">
-              <span>Collections</span>
+              <span>Organization</span>
               <span className="text-xl">+</span>
             </button>
           </div>
