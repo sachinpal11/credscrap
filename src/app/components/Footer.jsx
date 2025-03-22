@@ -38,15 +38,15 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold text-green-500">Our Platform</h4>
           <ul className="mt-2 space-y-2">
-            <li><a href="#" className="text-gray-300 hover:text-white">Global Payouts</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Collections</a></li>
+            <li><a href="#" className="text-gray-300 hover:text-white">Organization</a></li>
+            <li><a href="#" className="text-gray-300 hover:text-white">HouseHolds</a></li>
           </ul>
         </div>
       </div>
 
       {/* Bottom Section */}
       <div className="text-center mt-10 border-t border-gray-700 pt-5">
-        <p className="text-gray-400">© Navro 2025. All Rights Reserved.</p>
+        <p className="text-gray-400">© CredScrap 2025. All Rights Reserved.</p>
         <div className="mt-2 space-x-4">
           <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
           <a href="#" className="text-gray-400 hover:text-white">Regulations</a>

@@ -33,7 +33,7 @@ function About() {
     <div ref={divRef} className='w-full h-auto flex flex-col uppercase justify-center items-center'>
       <div className='w-[95%] overflow-hidden rounded-2xl h-[60vh] bg-black'>
         <Image src={img1} className='w-full h-full object-cover' alt="Random Image" width={500} /></div>
-      <div className='w-[85%]  rounded-2xl -mt-35 bg-neutral-800 flex flex-col items-center px-5 py-15 gap-10 h-auto'>
+      <div className='w-[85%]  rounded-2xl -mt-35 bg-neutral-800/50 backdrop-blur-3xl flex flex-col items-center px-5 py-15 gap-10 h-auto'>
         <p className='text-3xl w-[70%] text-center'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, molestiae in nemo eius, necessitatibus nostrum ipsa officiis praesentium doloribus dicta ipsum aliquam, molestias earum tempora. Quam est asperiores placeat magni?
         </p>
