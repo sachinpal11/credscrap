@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import LocomotiveScroll from 'locomotive-scroll';
 import About from "./components/About";
 import PlatfromBenefits from "./components/PlatfromBenefits";
+import Marquee from "./components/Marquee";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Banner />
         <HeroSection />
         <About />
+        <Marquee />
         <PlatfromBenefits />
       </div>
     </div>
