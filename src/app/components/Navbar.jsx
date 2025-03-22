@@ -34,7 +34,7 @@ function Navbar() {
         <span className="cursor-pointer" >About</span>
         <span className="cursor-pointer" >Services</span>
       </div>
-      <Link href={'/signup'} className="px-5 uppercase text-lg py-2 rounded-full border-2 border-[#31f526] hover:bg-[#31f526] hover:text-black transition duration-300">Join Now</Link>
+      <Link href={'/login'} className="px-5 uppercase text-lg py-2 rounded-full border-2 border-[#31f526] hover:bg-[#31f526] hover:text-black transition duration-300">Join Now</Link>
     </motion.div>
   );
 }
