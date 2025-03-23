@@ -22,7 +22,7 @@ function Navbar() {
       animate={{
         width: scrolled ? "60%" : "90%",
         backdropFilter: scrolled ? "blur(10px)" : "blur(0px)",
-        backgroundColor: scrolled ? "rgba(0,0,0,0.40)" : "rgba(0,0,0,0)",
+        backgroundColor: scrolled ? "rgba(0,0,0,0.60)" : "rgba(0,0,0,0)",
 
       }}
       transition={{ duration: 0.7, ease: "easeInOut" }}
