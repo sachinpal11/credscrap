@@ -23,7 +23,7 @@ function PlatfromBenefits() {
             trigger: divRef.current,
             start: "top 90%",
             end: "top 50%",
-            // scrub: true,
+            scrub: true,
           },
         }
       );
