@@ -5,7 +5,7 @@ import axios from "axios";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-
+import bgImg from '@/assets/bgimage.jpg'
 export default function Page() {
   const [form, setForm] = useState({ email: "", password: "" });
   const router = useRouter();
@@ -25,7 +25,8 @@ export default function Page() {
   };
 
   return (
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-full relative h-screen flex items-center justify-center">
+      <img src={'https://theunitedindian.com/images/electronic-waste-disposal3.jpg'} className="w-full h-full absolute z-[-1] opacity-10" alt="" />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}

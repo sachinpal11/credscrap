@@ -42,6 +42,8 @@ export default function Signup() {
 
   return (
     <div className="w-full h-screen flex items-center justify-center">
+      <img src={'https://theunitedindian.com/images/electronic-waste-disposal3.jpg'} className="w-full h-full absolute z-[-1] opacity-10" alt="" />
+
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
