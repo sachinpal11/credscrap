@@ -14,7 +14,7 @@ export async function POST(req) {
       return NextResponse.json({ error: "All fields are required" }, { status: 400 });
     }
 
-    const user = await User.findOne({ email }).select("password").lean();
+    const user = await User.findOne({ email }).select("password");
     if (!user) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
