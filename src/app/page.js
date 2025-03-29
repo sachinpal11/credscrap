@@ -30,7 +30,7 @@ export default function Home() {
     <div className="h-[200vh] flex flex-col overflow-x-hidden w-full">
       <Navbar />
       <Video />
-      <div className="w-full flex flex-col items-center h-auto absolute top-0">
+      <div className="w-full flex flex-col items-center h-auto overflow-hidden absolute top-0">
         <Banner />
         <HeroSection />
         <About />
