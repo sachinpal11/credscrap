@@ -6,8 +6,10 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import bgImg from '@/assets/bgimage.jpg'
+import Loading from "../components/Loading";
 export default function Page() {
   const [form, setForm] = useState({ email: "", password: "" });
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -15,10 +17,12 @@ export default function Page() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const res = await axios.post("/api/user/login", form);
       console.log(res.data);
       router.push('/profile');
+      setLoading(false);
     } catch (error) {
       console.log(error.response?.data || "Error occurred");
     }
@@ -26,6 +30,7 @@ export default function Page() {
 
   return (
     <div className="w-full relative h-screen flex items-center justify-center">
+      {loading && <Loading />}
       <img src={'https://theunitedindian.com/images/electronic-waste-disposal3.jpg'} className="w-full h-full absolute z-[-1] opacity-10" alt="" />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}

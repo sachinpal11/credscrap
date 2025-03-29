@@ -5,9 +5,12 @@ import axios from "axios";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Loading from "../components/Loading";
 
 export default function Signup() {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -34,6 +37,7 @@ export default function Signup() {
     try {
       const res = await axios.post("/api/user/signup", form);
       console.log(res.data);
+      setLoading(true);
       router.push('/login');
     } catch (error) {
       console.log(error.response?.data || "Error occurred");
@@ -41,7 +45,8 @@ export default function Signup() {
   };
 
   return (
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-full h-screen relative flex items-center justify-center">
+      {loading && <Loading />}
       <img src={'https://theunitedindian.com/images/electronic-waste-disposal3.jpg'} className="w-full h-full absolute z-[-1] opacity-10" alt="" />
 
       <motion.div
