@@ -39,7 +39,7 @@ export default function HeroSection() {
           <p className="text-green-500 font-medium uppercase mb-2 px-2 py-1 rounded">
             Our Platform
           </p>
-          <h1 className="text-4xl font-bold text-gray-900 leading-tight mb-3">
+          <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 leading-tight mb-3">
             Unlock access to the best e-waste exchange system around the world.
           </h1>
           <div className="flex space-x-4 mt-6">

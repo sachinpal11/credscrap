@@ -18,14 +18,14 @@ const brands = [
 export default function Marquee() {
   return (
     <div className="w-full my-30 h-auto bg-black/10 backdrop-blur-3xl py-10 filter grayscale-[20%] flex overflow-hidden relative">
-      <div className="flex w-auto gap-15 whitespace-nowrap animate-marquee">
+      <div className="flex w-auto gap-5 sm:gap-15 whitespace-nowrap animate-marquee">
         {[...brands, ...brands].map((brand, index) => (
-          <div key={index} className="flex items-center w-[200px] h-[200px] aspect-square overflow-hidden">
+          <div key={index} className="flex items-center w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] aspect-square overflow-hidden">
             <Image
               src={brand.src}
               alt={brand.alt}
               height={200}
-              className="w-[200px] h-[200px] filter grayscale-[20%] rounded-full object-cover"
+              className="sm:w-[200px] w-[100px] h-[100px] sm:h-[200px] filter grayscale-[20%] rounded-full object-cover"
             />
           </div>
         ))}
