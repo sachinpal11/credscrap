@@ -57,7 +57,7 @@ function Bot() {
             <h2 className="text-xl font-bold">CredScrap AI</h2>
             <button onClick={() => setIsOpen(false)} className="text-gray-400"><ChevronDown /></button>
           </div>
-          <div className="h-64 overflow-y-auto scrollbar-hidden p-2 bg-gray-800 rounded-md mb-2">
+          <div className="h-64 overflow-y-auto  p-2 bg-gray-800 rounded-md mb-2">
             {messages.map((msg, index) => (
               <div key={index} className="mb-2">
                 <strong className={msg.role === "user" ? "text-blue-400" : "text-green-400"}>

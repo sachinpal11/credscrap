@@ -45,8 +45,3 @@ body {
   display: flex;
   animation: marquee 10s linear infinite;
 }
-
-.scrollbar-hidden {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
