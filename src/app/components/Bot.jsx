@@ -48,7 +48,7 @@ function Bot() {
       ) : (
         <motion.div
           initial={{ opacity: 0, y: 20, height: 0, width: 0 }}
-          animate={{ opacity: 1, y: 20, height: 360, width: 400 }}
+          animate={{ opacity: 1, y: 20, height: 360, width: 370 }}
           exit={{ opacity: 0, y: 20, height: 0, width: 0 }}
           transition={{ duration: 0.3 }}
           className="fixed bottom-10 overflow-hidden right-5 max-w-lg p-4 bg-gray-900/50 backdrop-blur-2xl  text-white rounded-lg shadow-lg"
