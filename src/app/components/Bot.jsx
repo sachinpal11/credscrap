@@ -48,7 +48,7 @@ function Bot() {
       ) : (
         <motion.div
           initial={{ opacity: 0, y: 20, height: 0, width: 0 }}
-          animate={{ opacity: 1, y: 20, height: 350, width: 300 }}
+          animate={{ opacity: 1, y: 20, height: 360, width: 400 }}
           exit={{ opacity: 0, y: 20, height: 0, width: 0 }}
           transition={{ duration: 0.3 }}
           className="fixed bottom-10 overflow-hidden right-5 max-w-lg p-4 bg-gray-900/50 backdrop-blur-2xl  text-white rounded-lg shadow-lg"
@@ -57,7 +57,7 @@ function Bot() {
             <h2 className="text-xl font-bold">CredScrap AI</h2>
             <button onClick={() => setIsOpen(false)} className="text-gray-400"><ChevronDown /></button>
           </div>
-          <div className="h-64 overflow-y-auto  p-2 bg-gray-800 rounded-md mb-2">
+          <div className="h-64 overflow-y-auto p-2 bg-gray-800 rounded-md mb-2">
             {messages.map((msg, index) => (
               <div key={index} className="mb-2">
                 <strong className={msg.role === "user" ? "text-blue-400" : "text-green-400"}>
